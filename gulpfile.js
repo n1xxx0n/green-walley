@@ -73,7 +73,7 @@ gulp.task('pug', function() {
 // ЗАДАЧА: Копирование изображений
 gulp.task('img', function () {
   return gulp.src([
-        dirs.source + '/img/*.{gif,png,jpg,jpeg,svg}',      // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+        dirs.source + '/img/**/*.{gif,png,jpg,jpeg,svg}',      // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
       ],
       {since: gulp.lastRun('img')}                          // оставим в потоке обработки только изменившиеся от последнего запуска задачи (в этой сессии) файлы
     )
@@ -85,7 +85,7 @@ gulp.task('img', function () {
 // ЗАДАЧА: Оптимизация изображений (ЗАДАЧА ЗАПУСКАЕТСЯ ТОЛЬКО ВРУЧНУЮ)
 gulp.task('img:opt', function () {
   return gulp.src([
-      dirs.source + '/img/*.{gif,png,jpg,jpeg,svg}',        // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+      dirs.source + '/img/**/*.{gif,png,jpg,jpeg,svg}',        // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
       '!' + dirs.source + '/img/sprite-svg.svg',            // SVG-спрайт брать в обработку не будем
     ])
     .pipe(plumber({ errorHandler: onError }))
@@ -211,7 +211,7 @@ gulp.task('serve', gulp.series('build', function() {
       baseDir: "./build/"
     },
     port: 3000,                                             // порт, на котором будет работать сервер
-    startPath: '/pug/index.html',                           // файл, который буде открываться в браузере при старте сервера
+    startPath: '/index.html',                           // файл, который буде открываться в браузере при старте сервера
     // open: false                                          // возможно, каждый раз стартовать сервер не нужно...
   });
 

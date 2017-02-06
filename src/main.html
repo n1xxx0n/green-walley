@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
+
 <body>
 
 
     <header class="page-header">
         <div class="page-header__inner">
-            <a href="" class="logo"></a>
+            <!--<a href="" class="logo"></a>
 			<div clas="main-nav">
 				<nav class="main-nav__nav">
 					<ul class="main-nav__list">
@@ -27,7 +30,35 @@
                 <a href="tel:+7812 777-55-88" class="page-header__phone">+7 812 777-55-88</a>
                 <div class="page-header__address">г. Санкт-Петербург, Приморское ш. 600</div>
             </div>
-            <a href="" class="btn btn--orange">Забронировать</a>
+            <a href="" class="btn btn--orange">Забронировать</a>-->
+            <nav>
+                <div class="container">
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a class="navbar-brand" href="#">LOGO</a></div>
+
+                    <div class="collapse navbar-collapse" id="defaultNavbar1">
+
+                        <ul class="nav navbar-nav">
+                            <li class="main-nav__item   main-nav__item--active"><a href="#">Номера</a></li>
+                            <li class="main-nav__item"><a class='main-nav__link' href='#'>Коттедж</a></li>
+                            <li class="main-nav__item"><a class='main-nav__link' href='#'>Ресторан</a></li>
+                            <li class="main-nav__item"><a class='main-nav__link' href='#'>Отдых</a></li>
+                            <li class="main-nav__item"><a class='main-nav__link' href='#'>Контакты</a></li>
+                        </ul>
+
+                        <div class="page-header__contacts">
+                            <a href="tel:+7812 777-55-88" class="page-header__phone">+7 812 777-55-88</a>
+                            <p class="page-header__address">г. Санкт-Петербург, Приморское ш. 600<a href="" class="btn btn--orange navbar-right">Забронировать</a></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
         </div>
     </header>
 
@@ -47,27 +78,40 @@
             </section>
         </div>
     </div>
-    
-	
-	<div class="gallery"><img src="" alt="" class="gallery__main"></div>
-	
-	
+
+
+    <div class="gallery"><img src="http://" alt="" class="gallery__main"></div>
+
+
     <section class="reviews">
-        <div class="reviews__header">
-            <h2 class="reviews__title">Отзывы</h2>
-        </div>
-        <div class="rewiews__body">
+
+
+        <h2 class="reviews__title">Отзывы</h2>
+        <a class="reviews__control carousel-control left" href="#">
+            <span class="reviews__control--left glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="reviews__control carousel-control right" href="#">
+            <span class="reviews__control--right glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <div class="rewiews__itemBody">
             <img class="rewiews__photo" src="#" alt="">
             <span class="rewiews__name">Имя</span>
             <p class="rewiews__text">Текст описания</p>
             <p class="rewiews__data">Дата</p>
         </div>
-        <div class="rewiews__footer">
-            <button class="rewiews__btn">все отзывы</button>
+
+        <div class="rewiews__itemBody">
+            <img class="rewiews__photo" src="#" alt="">
+            <span class="rewiews__name">Имя</span>
+            <p class="rewiews__text">Текст описания</p>
+            <p class="rewiews__data">Дата</p>
         </div>
+
+        <а href="#" class="rewiews__allBtn">все отзывы</a>
+
     </section>
-	
-	
+
+
     <section class="discounts">
         <h2 class="discounts__title">Акции</h2>
         <!--slider-->
@@ -85,8 +129,8 @@
         <!--end slider-->
 
     </section>
-	
-	
+
+
     <section class="contacts">
         <h3 class="contacts__title">Как добраться</h3>
         <div class="contacts__map"></div>
@@ -101,8 +145,8 @@
             <p class="contacts__transport">Расписание</p>
         </div>
     </section>
-	
-	
+
+
     <section class="cottage-hotel">
         <h3 class="cottage-hotel__title">Где вы хотите отдохнуть</h3>
         <div class="item-sale-box">
@@ -112,20 +156,20 @@
                 <span="item-sale-box__price">12354</span>сутки</p>
         </div>
     </section>
-    
-	
-	<footer class="page-footer">
-		<div class="page-footer__inner">
-			<div class="page-footer__address">г. Санкт-Петербург, Приморское ш. 600</div>
 
-				<div class="page-footer__social-icons">
-				<a href="#" class="main-logo"><img src="" alt=""></a>
-			</div>
 
-			<div class="page-footer__contacts">+7 812 777-55-88</div>
-		</div>
-	</footer>
+    <footer class="page-footer">
+        <div class="page-footer__inner">
+            <div class="page-footer__address">г. Санкт-Петербург, Приморское ш. 600</div>
 
-	</body>
+            <div class="page-footer__social-icons">
+                <a href="#" class="main-logo"><img src="" alt=""></a>
+            </div>
+
+            <div class="page-footer__contacts">+7 812 777-55-88</div>
+        </div>
+    </footer>
+
+</body>
 
 </html>

@@ -1,5 +1,38 @@
 
 .page-header {
-  color: @text-color;
-  display: inline-block;
+/* 	background-color: blue;
+
+@media (max-width: 1199px) {
+background-color: red;
+}	
+@media (max-width: 767px) {
+background-color: yellow;
+} */
+
+
+  //display: inline-block;
+  &__contacts{
+  	    @media (max-width: 1199px) {    	
+		display: none;
+	}
+  }
+
+
+  &__btn{
+
+	@media (max-width: 1199px) {    	
+		display: none;
+	}
+
+  }
+  &__inner{
+  	position: relative;
+  	display: flex;
+  	justify-content: space-between;
+
+	@media (max-width: 1199px) {    	
+		justify-content: center;
+	}
+
+  }
 }

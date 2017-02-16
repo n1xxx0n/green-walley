@@ -1,5 +1,56 @@
 .main-nav{
 
-	.nav-divider(@color: #e5e5e5);
+&__nav{}
+&__list{
+	display: flex;
+	justify-content: space-between;
+
+	&--active{
+		display: flex;
+	}
+	@media (max-width: 1199px) {
+		flex-direction: column;
+		display: none;
+
+	}		
+}
+&__toggler{
+    display: none;
+    padding: 17px 6px;
+	position: absolute;
+	right: 0;
+    @media (max-width: 1199px) {
+
+		display: inline-block;
+	}	
+
+span{
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+    height: 4px;
+    background-color: red;
+}
+span:after, span:before{
+  content: '';
+  background-color: red;
+  width: 30px;
+  height: 4px;
+  display: block;
+}
+span:before{
+  transform: translateY(-10px);
+}
+span:after{
+  transform: translateY(6px);
+}
+
+
+}
+&__link{}
+&__item{
+	&--active{}
+}
+
 
 }

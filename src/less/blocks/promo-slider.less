@@ -1,24 +1,47 @@
 .promo-slider{
-	
+	 
 	&__item{
-		.make-md-column(6);
-		background: #000;
+		
+		//background: url(/img/promo1.png);
+		min-height:430px;
 	
 		&--title{
+			
+		top:3em;
 
 		}
-	
 		&--text{
-
+		top:7em;
 		}
-	
+		&--bg{
+			background: #F9FAF7;
+		}
 	}
+		&__wrapper{
+			
+			position: relative;
+			background: black;
+			
+			& img, h2, p{
+
+				position: absolute;
+
+			
+			}
+		
+		}
+
+	
+
+	
+	
 
 	&__link{
 
-		&--active{
-			
-		}
+		text-align: center;
+		padding:5px;
+
+		
 
 	}
 }

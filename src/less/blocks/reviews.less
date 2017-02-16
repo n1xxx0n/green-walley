@@ -1,9 +1,20 @@
 .reviews{
+
+background-image: url('/img/reviews_bg.png');
+min-height: 530px;
+
+
 	&__wrapper{}
-	&__title{}
+	&__title{
+		text-align: center;
+	}
 	&__itemBody{
-		.make-md-column-offset(2);
-		.make-md-column(5);
+		background: #fff;
+		
+		.center-block();
+		margin-right:10px;
+		//.make-md-column-offset(2);
+		//.make-md-column(5);
 
 	}
 	&__photo{}
@@ -17,6 +28,10 @@
 		&--right{}
 
 	}
-	&__allBtn{}
+	&__allBtn{
+		display: block;
+		text-align: center;
+
+	}
 	
 }
